@@ -1,0 +1,140 @@
+
+
+
+
+/*  PSEUDOS CLASSES 
+
+    :active -> quando o elemento está ativo, ou seja, está sendo pressionado. 
+
+    :viseted -> seleciona o link que foi visitado. 
+    
+    :hover -> quando o mouse passe em cima do elemento. 
+
+    :checked -> usado em radio / checkbox / select.
+
+    :disable -> elemento desabilitado / button / input.
+
+    :enabled -> elemento está desabilitado 
+
+    :focus -> é aplicada quando um elemento recebe foco oque pode ocorrer quando o usuário seleciona o elemento.
+    
+    :read-only -> seleciona input ou textarea que são apenas leitura.
+
+    :empaty -> elemento que não tem filho. 
+
+
+    :first-child -> primeiro filho Ex: preimeira Li de uma Ul / primeiro span de uma Div.
+
+    :first-of-type -> primeiro elemento de seu tipo entre os Filhos de seu elemento Pai.
+
+    :last-child -> último filho.
+
+    :last-of-type -> último elemento de seu tipo entre os filhos de seu elemento pai.
+
+    :not ( ) -> estiliza os elementos, exeto o que está dentro do ( ).
+
+    :nth-child ( ) -> seleciona o elemento baseado na sua posição. Ex: :ntn-child ( 3 ).
+
+    :nth-last-child ( ) -> seleciona o elemento baseado na sua posição, contando de trás pra frente.
+
+    */
+    
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{ 
+    margin: 0 0 0 100px;
+}
+
+
+.active:active{
+    color: #8a2be2;
+    cursor: pointer;
+
+}
+
+.visited:visited{
+    color: #16ad3b;
+}
+
+
+.hover:hover{ 
+    color: #ff0000;
+}
+
+.checked:checked{
+    color: #00ff2a;
+    width: 100px;
+    right: 100px;
+}
+
+.disabled:disabled{
+
+/* desativa ferramentase e elementos */
+
+}
+.enabled:enabled {
+
+/* ativa ferramentas ou elementos só quando outra ferramenta ou area for preenchida */
+
+}
+.focus:focus{ 
+    border:1px solid #ff0000 ;
+    outline: none; /*borda padrão no site*/
+}
+
+.empty { 
+    height: 100px;
+    width: 100px;
+    background: #ff0000;
+
+
+}
+.empty:empty {
+    background: #0300c7;
+
+}
+
+.first-child
+li:first-child { 
+    color:#ff0000
+
+
+}
+
+.first-of-type
+span:first-of-type {
+    color: #00ff2a;
+}
+
+.first-of-type
+p:first-of-type {
+    color: #0000ff
+
+}
+
+.last-child
+li:last-child{
+    color: #ff0000;
+}
+
+.not :not(p){
+    color: #ff0000;
+
+}
+
+.nth-child
+li:nth-child(3) {
+    color: #ffee00;
+}
+
+.nth-last-child
+li:nth-last-child(2) {
+    color: #00ff37;
+}

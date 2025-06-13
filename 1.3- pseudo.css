@@ -1,0 +1,55 @@
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+input {
+    border: 1px solid #ff0000;
+    color: #0000ff;
+}
+
+input::placeholder{
+    color: #ff1396;
+}
+
+p {
+    color: #0000ff;
+}
+
+p::first-letter{     / Primeira letra /
+    color: #ff0000;
+}
+
+p::first-line{       / Primeira linha do texto /
+    color: #0099f1;
+}
+
+*/
+ 
+section { 
+    margin: 200px 0 0 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #016609;
+}
+
+
+a::before{ 
+    content:" 👨‍💻 "
+}
+
+a::after{ 
+    content:" 📡💰 "
+}
+

@@ -1,0 +1,62 @@
+/*
+all: Para todos os dispositivos.
+
+Braille: Para deficientes táteis. ( deficiente visual )
+
+Enbossed: Para dispositivos que impremen em braile.
+
+Handheld: Para dispositivos portáteis, geralmente com telas pequenas e banda limitada.
+
+Print: Para impressão em papel.
+
+Projection: Para aprensentações como PPS.
+
+Screen: Para monitores ou dispositivos com telas coloridas e resolução adeguada.
+
+Speech: Para sintetizadores de voz. As CSS 2 tem uma especificação do CSS chamado Aural, onde podemos formatar a voz do sintetizadores 
+
+
+Orientação
+portrait -> altura é maior que a largura
+
+landscape -> largura é maior que a altura 
+
+
+Exemplo: 
+
+@midia screen and (max width:600px) and (orientation: landscape) { 
+    
+    
+    }
+
+*/
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div {
+    height: 600px;
+    width: 600px;
+    background: #0000ff;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+
+    div {
+        background: #ff0000;
+        height: 200px;
+        width: 200px;
+
+    }
+}
